@@ -70,7 +70,11 @@ function createButtonControl() {
     div.classList = "buttonControl";
     minusButton = createButton("-");
     addButton = createButton("+");
+    let inputForm = document.createElement("input");
+    inputForm.setAttribute("type", "number");
+    inputForm.setAttribute("min", "0");
     div.appendChild(minusButton);
+    div.appendChild(inputForm);
     div.appendChild(addButton);
     return div;
 }
