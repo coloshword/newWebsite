@@ -68,7 +68,24 @@ hr:after {
     cursor: pointer;
 }
 
-.topRibbon {
+.padding {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+.topRibbon0{
+    height: 1vh;
+    background-color: rgba(235, 155, 76);
+}
+
+.topRibbon1 {
+    height: 1vh;
+    background-color: rgba(201,71,245);
+}
+
+.topRibbon2 {
     background-color: rgba(79,134,247);
     height: 1vh;
 }
@@ -79,7 +96,21 @@ hr:after {
     justify-content: space-around;
     margin: auto;
 }
-.putFood {
+.putFood0{
+    /* main box */
+    border-radius: 5px;
+    margin:16px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.putFood1{
+    /* main box */
+    border-radius: 5px;
+    margin:16px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.putFood2{
     /* main box */
     border-radius: 5px;
     margin:16px;
