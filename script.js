@@ -46,6 +46,31 @@ function displayFood(dict, meal, classModifier) {
         h6.appendChild(document.createTextNode(item.item));
         displayBox.appendChild(ribbon);
         displayBox.appendChild(h6);
+        displayBox.appendChild(createButtonControl());
         foodContainer.appendChild(displayBox);
+        // add buttons: red
     }
+}
+
+function createButton(text) {
+    let minusButton = document.createElement("button");
+    minusButton.innerHTML = text;
+    if(text == '+') {
+        minusButton.classList = "buttonPlus";
+    }
+    else {
+        minusButton.classList = "buttonMinus";
+    }
+    return minusButton;
+}
+
+function createButtonControl() {
+    //create div
+    let div = document.createElement("div");
+    div.classList = "buttonControl";
+    minusButton = createButton("-");
+    addButton = createButton("+");
+    div.appendChild(minusButton);
+    div.appendChild(addButton);
+    return div;
 }
